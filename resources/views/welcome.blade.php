@@ -45,7 +45,7 @@
     - Récupérer le template fourni et compléter les TODOs https://codepen.io/spicypaper/pen/zYzajBp
     - Tester l'édition d'un livre
 -->
-<!-- TODO-5-10 Compléter la vue permettant d'afficher les détails d'un livre
+<!-- TODO-5-10 DONE Compléter la vue permettant d'afficher les détails d'un livre
     - Récupérer le template fourni et compléter les TODOs https://codepen.io/spicypaper/pen/VwWdxdJ
     - Tester l'affichage d'un livre
 -->
