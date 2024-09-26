@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/index', [HomeController::class, 'index'])->name('home');
 Route::resource('books', BookController::class);
-Route::get('/books', [BookController::class, 'index'])->name('books');
 
 // TODO-1-2 DONE Remplacer la route "welcome" par la route "home" affichant le hello world
 
