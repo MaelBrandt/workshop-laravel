@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 // TODO-4-0 DONE Créer un contrôleur "BookController" capable de traiter la ressource "Book" --> php artisan... --resource
 // TODO-4-1 DONE Compléter la fonction "index" afin de retourner tous les livres
 
-// TODO-5-3 Relier les nouvelles vues aux méthodes de "BookController" et essayer d'accéder à chaque vues :
+// TODO-5-3 DONE Relier les nouvelles vues aux méthodes de "BookController" et essayer d'accéder à chaque vues :
 //      /books, /books/1, /books/1/edit, /books/create
 // TODO-5-5 Compléter les méthodes du contrôleur "BookController"
 // TODO-5-6 Ajouter un message de confirmation pour les méthodes store, update et destory du "BookController"
