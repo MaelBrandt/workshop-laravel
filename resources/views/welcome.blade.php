@@ -41,7 +41,7 @@
     - Tester l'ajout d'un livre (ne fonctionne pas ? c'est normal.)
     - Résoudre le problème du "mass assignement" empêchant de créer un livre
 -->
-<!-- TODO-5-9 Créer le formulaire d'édition
+<!-- TODO-5-9 DONE Créer le formulaire d'édition
     - Récupérer le template fourni et compléter les TODOs https://codepen.io/spicypaper/pen/zYzajBp
     - Tester l'édition d'un livre
 -->
