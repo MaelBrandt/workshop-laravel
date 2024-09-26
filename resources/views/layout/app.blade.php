@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="books">Books</a>
+                      <a class="nav-link" href={{ route('books.index') }}>Books</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="TODO to order">Order</a>

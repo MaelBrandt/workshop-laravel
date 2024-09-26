@@ -13,7 +13,7 @@ class BookController extends Controller
     public function index()
     {
         $books = Book::all();
-        return view('books\index', ['books' => $books]);
+        return view('books.index', ['books' => $books]);
     }
 
     /**
@@ -21,7 +21,7 @@ class BookController extends Controller
      */
     public function create()
     {
-        return view('books\create');
+        return view('books.create');
     }
 
     /**
@@ -29,7 +29,8 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        \App\Models\Book::create($request->all());
+        return redirect()->route('books.index');
     }
 
     /**
@@ -37,7 +38,8 @@ class BookController extends Controller
      */
     public function show(string $id)
     {
-        return view('books/show');
+        $book = \App\Models\Book::findOrFail($id);
+        return view('books.show', ['book' => $book]);
     }
 
     /**
@@ -45,7 +47,8 @@ class BookController extends Controller
      */
     public function edit(string $id)
     {
-        return view('books/edit');
+        $book = \App\Models\Book::where('id', $id)->firstOrFail();
+        return view('books.edit', ['book' => $book]);
     }
 
     /**
@@ -53,7 +56,8 @@ class BookController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        \App\Models\Book::findOrFail($id)->update($request->all());
+        return redirect()->route('books.index');
     }
 
     /**
@@ -61,6 +65,9 @@ class BookController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $book = \App\Models\Book::find($id);
+        $book->delete();
+
+        return redirect()->route('books.index');
     }
 }

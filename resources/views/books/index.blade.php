@@ -4,7 +4,8 @@
         @section('content')
             <h1>Livres</h1>
 
-            <a href="#" class="btn btn-primary mb-2">Ajouter un livre</a>
+            <!--ajouter un livre-->
+            <a href="TODO route Laravel" class="btn btn-primary float-right mb-2">Ajouter un livre</a>
 
             <table class="table">
                 <thead>
@@ -24,8 +25,16 @@
                             <td>{{$book->author}}</td>
                             <td>{{$book->pages}}</td>
                             <td>{{$book->quantity}}</td>
+
+                            <!--actions-->
                             <td>
-                                --actions--
+                                <a class="btn btn-info" href={{ route('books.show', $book->id) }}>Afficher</a>
+                                <a class="btn btn-primary" href={{ route('books.edit', $book->id) }}>Modifier</a>
+                                <form action="{{ route('books.destroy',$book->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Supprimer</button>
+                                </form>
                             </td>
                         </tr>
                     </tbody>
