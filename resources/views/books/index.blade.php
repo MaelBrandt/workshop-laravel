@@ -5,7 +5,7 @@
             <h1>Livres</h1>
 
             <!--ajouter un livre-->
-            <a href="TODO route Laravel" class="btn btn-primary float-right mb-2">Ajouter un livre</a>
+            <a href={{ route('books.create') }} class="btn btn-primary float-right mb-2">Ajouter un livre</a>
 
             <table class="table">
                 <thead>

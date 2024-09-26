@@ -31,12 +31,12 @@
         <button type="submit" class="btn btn-danger">Supprimer</button>
     </form>
 -->
-<!-- TODO-5-7 Réceptionner et afficher les message de confirmations et tester le bouton "delete"
+<!-- TODO-5-7 DONE Réceptionner et afficher les message de confirmations et tester le bouton "delete"
     1. Modifier "app.blade.php"
     2. Accéder aux message via Session::get("...") et l'afficher dans le div "container" au dessus du "yield content"
     3. Utiliser les alert bootstrap pour faire quelque de plus esthétique
 -->
-<!-- TODO-5-8 Créer le formulaire de création
+<!-- TODO-5-8 DONE Créer le formulaire de création
     - Récupérer le template fourni et compléter les TODOs https://codepen.io/spicypaper/pen/LYLrWMK
     - Tester l'ajout d'un livre (ne fonctionne pas ? c'est normal.)
     - Résoudre le problème du "mass assignement" empêchant de créer un livre

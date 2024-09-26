@@ -30,7 +30,7 @@ class BookController extends Controller
     public function store(Request $request)
     {
         \App\Models\Book::create($request->all());
-        return redirect()->route('books.index');
+        return redirect()->route('books.index')->with('success','Book created successfully.');
     }
 
     /**
@@ -57,7 +57,7 @@ class BookController extends Controller
     public function update(Request $request, string $id)
     {
         \App\Models\Book::findOrFail($id)->update($request->all());
-        return redirect()->route('books.index');
+        return redirect()->route('books.index')->with('success','Book updated successfully.');
     }
 
     /**
@@ -68,6 +68,6 @@ class BookController extends Controller
         $book = \App\Models\Book::find($id);
         $book->delete();
 
-        return redirect()->route('books.index');
+        return redirect()->route('books.index')->with('success','Book deleted successfully.');
     }
 }
