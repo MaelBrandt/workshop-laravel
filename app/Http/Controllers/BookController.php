@@ -12,8 +12,16 @@ class BookController extends Controller
      */
     public function index()
     {
+    /*
+        // Return all books
         $books = Book::all();
         return view('books.index', ['books' => $books]);
+    */
+
+        // return only the 5 most recently added books
+        $books = \App\Models\Book::latest()->paginate(5);
+        return view('books.index', compact('books'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**

@@ -4,7 +4,7 @@
         @section('content')
             <h1>Livres</h1>
 
-            <!--ajouter un livre-->
+            <!-- ajouter un livre -->
             <a href={{ route('books.create') }} class="btn btn-primary float-right mb-2">Ajouter un livre</a>
 
             <table class="table">
@@ -41,5 +41,7 @@
                 @endforeach
 
             </table>
+            <!-- Afiche les liens de pagination -->
+            {!! $books->links() !!}
         @endsection
     </div>

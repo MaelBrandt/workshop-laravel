@@ -54,7 +54,7 @@
 <!-- TODO-6-2 DONE Améliorer l'affichage des erreurs à l'aide d'une liste HTML et des classes alert
     de Bootstrap à placer en dessous du bouton
 -->
-<!-- TODO-6-4 Afficher les boutons et liens de paginations sur la vue "index" -->
+<!-- TODO-6-4 DONE Afficher les boutons et liens de paginations sur la vue "index" -->
 
 <!-- TODO-7-0 Créer une vue "order.blade.php" permettant de lister les livres à commandés
     - Repartir de la vue "index" (garder la pagination)
