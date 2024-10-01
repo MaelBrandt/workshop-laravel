@@ -50,8 +50,8 @@
     - Tester l'affichage d'un livre
 -->
 
-<!-- TODO-6-1 Tester d'afficher les erreurs sur la vue de création en utilisant "$errors" -->
-<!-- TODO-6-2 Améliorer l'affichage des erreurs à l'aide d'une liste HTML et des classes alert
+<!-- TODO-6-1 DONE Tester d'afficher les erreurs sur la vue de création en utilisant "$errors" -->
+<!-- TODO-6-2 DONE Améliorer l'affichage des erreurs à l'aide d'une liste HTML et des classes alert
     de Bootstrap à placer en dessous du bouton
 -->
 <!-- TODO-6-4 Afficher les boutons et liens de paginations sur la vue "index" -->

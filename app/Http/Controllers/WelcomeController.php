@@ -17,7 +17,7 @@ use Illuminate\Http\Request;
 // TODO-5-6 DONE Ajouter un message de confirmation pour les méthodes store, update et destory du "BookController"
 //      avec "->with(...)" et essayer le bouton "delete"
 
-// TODO-6-0 Ajouter des validations dans "BookController.store"
+// TODO-6-0 DONE Ajouter des validations dans "BookController.store"
 //      - title : obligatoire, nb de charactère [5; 25]
 //      - pages : obligatoire, entier, nombre ]0; 1000[
 //      - quantity : obligatoire, entier, nombre [0; 100[
