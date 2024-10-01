@@ -24,7 +24,7 @@
                 </div>
                 <div class="form-group col-12">
                     <label for="inputAuthor">Auteur</label>
-                    <input type="text" name="author" value={{ $book->author }} class="form-control" id="inputTitle">
+                    <input type="text" name="author" value={{ $book->author }} class="form-control" id="inputAuthor">
                 </div>
                 <div class="row mt-3">
                     <div class="form-group col-6">

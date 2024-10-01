@@ -30,6 +30,7 @@ class BookController extends Controller
     public function store(Request $request)
     {
         \App\Models\Book::create($request->all());
+
         return redirect()->route('books.index')->with('success','Book created successfully.');
     }
 

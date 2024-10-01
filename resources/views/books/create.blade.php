@@ -1,14 +1,13 @@
 @extends('layout.app')
 
 @section('content')
-
 <div class="row mb-3">
     <div class="col-12">
         <a class="btn btn-primary" href={{ route('books.index') }}> Retour</a>
     </div>
 </div>
 
-<form action="TODO: route Laravel" method="POST">
+<form action="{{ route("books.store") }}" method="POST">
     @csrf
 
     <div class="row">
@@ -22,6 +21,10 @@
                         <div class="form-group col-12">
                             <label for="inputTitle">Titre</label>
                             <input type="text" name="title" class="form-control" id="inputTitle">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="inputAuthor">Auteur</label>
+                            <input type="text" name="author" class="form-control" id="inputAuthor">
                         </div>
                         <div class="row mt-3">
                             <div class="form-group col-6">
