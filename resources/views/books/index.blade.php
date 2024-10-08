@@ -11,7 +11,6 @@
                 <thead>
                     <tr>
                         <th scope="col">Titre</th>
-                        <th scope="col">Author</th>
                         <th scope="col">Pages</th>
                         <th scope="col">Quantité</th>
                         <th scope="col">&nbsp;</th>
@@ -22,7 +21,6 @@
                     <tbody>
                         <tr>
                             <td>{{$book->title}}</td>
-                            <td>{{$book->author}}</td>
                             <td>{{$book->pages}}</td>
                             <td>{{$book->quantity}}</td>
 

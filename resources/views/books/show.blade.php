@@ -20,10 +20,6 @@
                         <strong>Titre :</strong>
                         {{ $book->title }}
                     </div>
-                    <div class="form-group col-12">
-                        <strong>Auteur :</strong>
-                        {{ $book->author }}
-                    </div>
                     <div class="row mt-3">
                         <div class="form-group col-6">
                             <strong>Nombre de pages :</strong>
