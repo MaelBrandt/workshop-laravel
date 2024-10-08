@@ -12,8 +12,7 @@ class BookController extends Controller
      */
     public function index()
     {
-    /*
-        // Return all books
+    /*  // Return all books
         $books = Book::all();
         return view('books.index', ['books' => $books]);
     */
@@ -21,6 +20,18 @@ class BookController extends Controller
         // return only the 5 most recently added books
         $books = \App\Models\Book::latest()->paginate(5);
         return view('books.index', compact('books'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
+    /**
+     * Display only the books with a quantity <= 0.
+     */
+    public function order()
+    {
+        // return only the 5 most recently added books with a quantity <= 0
+        $books = \App\Models\Book::latest()->where('quantity', '<=', 0)->paginate(5);
+
+        return view('books.order', compact('books'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 

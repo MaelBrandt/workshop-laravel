@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-12">
-        <a class="btn btn-primary" href={{ route('books.index') }}> Retour</a>
+        <a class="btn btn-primary" href={{ route('books.index') }}>Retour</a>
     </div>
 </div>
 

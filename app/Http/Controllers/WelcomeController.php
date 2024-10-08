@@ -23,7 +23,7 @@ use Illuminate\Http\Request;
 //      - quantity : obligatoire, entier, nombre [0; 100[
 // TODO-6-3 DONE Modifier "BookController.index" pour renvoyer 5 éléments uniquements et un numéro de page (pagination)
 
-// TODO-7-2 Créer une méthode "order" dans le contrôleur "BookController" basé sur la méthode "index" qui
+// TODO-7-2 DONE Créer une méthode "order" dans le contrôleur "BookController" basé sur la méthode "index" qui
 //      renvoie uniquement les livres ayant une quantité <= à 0
 
 // TODO-8-10 Envoyer les auteurs sur la page "create" depuis la méthode "create" de "BookController"
