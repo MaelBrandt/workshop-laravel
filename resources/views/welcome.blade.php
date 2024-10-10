@@ -68,7 +68,7 @@
 <!-- TODO-8-9 DONE Afficher le nom des auteurs et pas seulement leur ID en modifiant la méthode "index" de "BookController" -->
 <!-- TODO-8-11 DONE Ajout un champs de type "select" sur la page de création
     et afficher les auteurs (attention name de select doit contenir author_id) -->
-<!-- TODO-8-12 Améliorer le formulaire pour conserver les saisies utilisateur en cas d'erreur du formulaire -->
+<!-- TODO-8-12 DONE Améliorer le formulaire pour conserver les saisies utilisateur en cas d'erreur du formulaire -->
 
 <!-- TODO-9-0 Importer les icones bootstrap via un CDN dans "layout.app" : https://icons.getbootstrap.com/#install -->
 <!-- TODO-9-1 Ajouter des icones aux endroits pertinent sur l'app : https://icons.getbootstrap.com/ -->

@@ -27,7 +27,7 @@ use Illuminate\Http\Request;
 //      renvoie uniquement les livres ayant une quantité <= à 0
 
 // TODO-8-10 DONE Envoyer les auteurs sur la page "create" depuis la méthode "create" de "BookController"
-// TODO-8-13 Ajouter la validation du champ auteur dans la méthode "store" de "BookController"
+// TODO-8-13 DONE Ajouter la validation du champ auteur dans la méthode "store" de "BookController"
 
 class WelcomeController extends Controller
 {

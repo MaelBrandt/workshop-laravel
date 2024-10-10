@@ -51,6 +51,7 @@ class BookController extends Controller
     {
         $request->validate([
             'title' => 'required|min:5|max:25',
+            'author_id' => 'nullable|integer|exists:authors,id',
             'pages' => 'required|integer|gt:0|lt:1000',
             'quantity' => 'required|integer|gte:0|lt:100',
          ]);
