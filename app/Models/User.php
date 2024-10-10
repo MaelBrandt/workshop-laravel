@@ -15,7 +15,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 // TODO-8-0 DONE Créer un modèle "Author" et sa migration en une seule commande --> php artisan... --migration
 // TODO-8-1 DONE Ajouter un champ "name" à "Author" et migrer les changements --> php artisan...
-// TODO-8-2 Relier "Book" et "Author" à l'aide d'une clée étrangère nommée "author_id" dans la table "Book"
+// TODO-8-2 DONE Relier "Book" et "Author" à l'aide d'une clée étrangère nommée "author_id" dans la table "Book"
 //      1. Créer une migration nommée "add_author_fk_to_books" --> php artisan...
 //      2. Relier la clée étrangère de la table "Book" (author_id) avec la clée primaire de "Author" (id) --> foreignId + constrained
 //      3. Permettre à la clée étrangère d'être null --> nullable

@@ -21,10 +21,11 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    public function down()
     {
         Schema::table('books', function (Blueprint $table) {
-            //
+            $table->dropForeign(['author_id']);
+            $table->dropColumn('author_id');
         });
     }
 };
