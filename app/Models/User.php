@@ -21,8 +21,8 @@ use Laravel\Sanctum\HasApiTokens;
 //      3. Permettre à la clée étrangère d'être null --> nullable
 //      4. Ajouter la suppression en cascade, supprimant les livres rattachés à un auteur quand celui-ci est supprimé --> onDelete
 //      5. Migrer les changements --> php artisan...
-// TODO-8-3 Compléter la méthode "down" --> dropForeign + dropColumn
-// TODO-8-4 Vérifier que le "down" fonctionne --> php artisan...
+// TODO-8-3 DONE Compléter la méthode "down" --> dropForeign + dropColumn
+// TODO-8-4 DONE Vérifier que le "down" fonctionne --> php artisan...
 // TODO-8-5 Relier "Book" et "Author" dans les modèles --> hasMany + belongsTo
 // TODO-8-6 Ajouter "author_id" dans le tableau fillable de "Book" permettant d'être utiliser lors de "mass assignment"
 
