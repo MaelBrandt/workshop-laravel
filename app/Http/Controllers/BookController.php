@@ -17,8 +17,8 @@ class BookController extends Controller
         return view('books.index', ['books' => $books]);
     */
 
-        // return only the 5 most recently added books
-        $books = \App\Models\Book::latest()->paginate(5);
+        // return only the 5 most recently added books and intersect the 'books' table with the 'author' table
+        $books = \App\Models\Book::with('author')->latest()->paginate(5);
         return view('books.index', compact('books'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
