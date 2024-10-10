@@ -21,6 +21,7 @@
                     <tbody>
                         <tr>
                             <td>{{$book->title}}</td>
+                            <td>{{$book->author_id ?? "Auteur inconnu..."}}</td>
                             <td>{{$book->pages}}</td>
                             <td>{{$book->quantity}}</td>
 
