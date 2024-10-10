@@ -66,7 +66,7 @@
 <!-- TODO-8-7 DONE Afficher l'ID des auteurs sur la page index de "Book" (si pas d'auteur, afficher un message pour l'indiquer) -->
 <!-- TODO-8-8 DONE Générer 3 auteurs depuis phpmyadmin (onglet insérer), les attribuer aux livres et tester pour voir si tout fonctionne -->
 <!-- TODO-8-9 DONE Afficher le nom des auteurs et pas seulement leur ID en modifiant la méthode "index" de "BookController" -->
-<!-- TODO-8-11 Ajout un champs de type "select" sur la page de création
+<!-- TODO-8-11 DONE Ajout un champs de type "select" sur la page de création
     et afficher les auteurs (attention name de select doit contenir author_id) -->
 <!-- TODO-8-12 Améliorer le formulaire pour conserver les saisies utilisateur en cas d'erreur du formulaire -->
 

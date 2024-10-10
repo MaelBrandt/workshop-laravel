@@ -22,6 +22,15 @@
                             <label for="inputTitle">Titre</label>
                             <input type="text" name="title" class="form-control" id="inputTitle">
                         </div>
+                        <div class="form-group col-12">
+                            <label for="exampleFormControlSelect1">Auteur</label>
+                            <select class="form-control" name="author_id" id="exampleFormControlSelect1">
+                                <option value="">Auteur inconnu...</option>
+                                @foreach ($authors as $author)
+                                    <option value="{{$author->id}}">{{$author->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
                         <div class="row mt-3">
                             <div class="form-group col-6">
                                 <label for="inputPages">Nombre de pages</label>
